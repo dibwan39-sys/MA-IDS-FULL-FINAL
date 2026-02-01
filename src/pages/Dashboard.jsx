@@ -4,7 +4,14 @@ import GlassCard from '../components/ids/GlassCard';
 import KPIMetrics from '../components/ids/KPIMetrics';
 import { cn } from "@/lib/utils";
 
-export default function Dashboard() {
+export default function cd "c:\Users\alan\Downloads\MA-IDS-FULL-FINAL"
+git remote set-url origin https://github.com/YOUR_USERNAME/MA-IDS-FULL-FINAL.gitcd "c:\Users\alan\Downloads\MA-IDS-FULL-FINAL"
+git remote set-url origin https://github.com/YOUR_USERNAME/MA-IDS-FULL-FINAL.gitcd "c:\Users\alan\Downloads\MA-IDS-FULL-FINAL"
+git remote set-url origin https://github.com/YOUR_USERNAME/MA-IDS-FULL-FINAL.gitcd "c:\Users\alan\Downloads\MA-IDS-FULL-FINAL"
+git remote set-url origin https://github.com/YOUR_USERNAME/MA-IDS-FULL-FINAL.gitcd "c:\Users\alan\Downloads\MA-IDS-FULL-FINAL"
+git remote set-url origin https://github.com/YOUR_USERNAME/MA-IDS-FULL-FINAL.gitcd "c:\Users\alan\Downloads\MA-IDS-FULL-FINAL"
+git remote set-url origin https://github.com/YOUR_USERNAME/MA-IDS-FULL-FINAL.gitcd "c:\Users\alan\Downloads\MA-IDS-FULL-FINAL"
+git remote set-url origin https://github.com/YOUR_USERNAME/MA-IDS-FULL-FINAL.gitDashboard() {
   const [systemStatus, setSystemStatus] = useState('operational');
 
   return (

@@ -48,7 +48,7 @@ A comprehensive, modern Intrusion Detection System (IDS) built with React, featu
 
 ```
 MA-IDS-FULL-FINAL/
-├── src/
+├── src/                    # Main React application
 │   ├── components/
 │   │   ├── ids/           # IDS-specific components
 │   │   └── ui/            # Reusable UI components
@@ -59,7 +59,23 @@ MA-IDS-FULL-FINAL/
 ├── agent/                 # Python ML agent
 ├── backend/               # Node.js backend server
 ├── frontend/              # Legacy frontend files
-└── entities/              # Data models and schemas
+├── entities/              # Data models and schemas
+├── presentation/          # Presentation materials
+│   ├── 01-introduction.md    # Project overview
+│   ├── 02-setup.md          # Installation guide
+│   ├── 03-components.md     # Component architecture
+│   ├── 04-pages.md          # Page features
+│   ├── 05-advanced.md       # Advanced capabilities
+│   ├── 06-conclusion.md     # Conclusion & applications
+│   └── code-overview.md     # Complete code explanation
+├── delivery/                # Sequential delivery parts
+│   ├── README.md           # Delivery documentation
+│   ├── delivery-part-01-setup.md      # Setup & config
+│   ├── delivery-part-02-components.md # Core components
+│   ├── delivery-part-03-pages.md      # Main pages
+│   ├── delivery-part-04-additional-pages.md # Extended features
+│   └── delivery-part-05-final-components.md # Final components
+└── README.md              # This file
 ```
 
 ## 🚀 Quick Start
@@ -107,6 +123,32 @@ npm run preview
 - `npm run preview` - Preview production build
 - `npm run lint` - Run ESLint
 - `npm run typecheck` - Run TypeScript checking
+
+## 📚 Presentation Materials
+
+This project includes comprehensive presentation materials organized in the `presentation/` folder:
+
+1. **01-introduction.md** - Project overview and objectives
+2. **02-setup.md** - Installation and setup guide
+3. **03-components.md** - Component architecture and design
+4. **04-pages.md** - Detailed page features and functionality
+5. **05-advanced.md** - Advanced capabilities and technical details
+6. **06-conclusion.md** - Real-world applications and conclusion
+7. **code-overview.md** - Complete code explanation with purpose and functionality
+
+Use these files to present and explain the MA-IDS project systematically.
+
+## 📦 Delivery Parts
+
+For systematic delivery and explanation, the project is organized into sequential parts in the `delivery/` folder:
+
+1. **Part 1: Setup & Configuration** - Project foundation, build tools, and dependencies
+2. **Part 2: Core Components** - Essential UI components (GlassCard, Sidebar, etc.)
+3. **Part 3: Main Pages** - Primary application pages (Dashboard, Firewall, Scanner)
+4. **Part 4: Additional Pages** - Extended functionality (Traffic, Syslog, ML Registry)
+5. **Part 5: Final Components** - Reports, Admin, Architecture, and services
+
+Each delivery part contains complete code with inline explanations, perfect for step-by-step presentation and implementation.
 
 ## 🔧 Configuration
 

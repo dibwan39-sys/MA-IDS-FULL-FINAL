@@ -1,0 +1,18 @@
+
+{
+  "name": "FirewallRule",
+  "type": "object",
+  "properties": {
+    "name": { "type": "string" },
+    "source_ip": { "type": "string" },
+    "dest_ip": { "type": "string" },
+    "protocol": { "type": "string", "enum": ["TCP","UDP","ICMP","ANY"] },
+    "port": { "type": "string" },
+    "action": { "type": "string", "enum": ["ALLOW","DENY","DROP","LIMIT"] },
+    "status": { "type": "string", "enum": ["active","disabled"], "default": "active" },
+    "priority": { "type": "number" },
+    "hit_count": { "type": "number", "default": 0 },
+    "description": { "type": "string" }
+  },
+  "required": ["name","action","protocol"]
+}

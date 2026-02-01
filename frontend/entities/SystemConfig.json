@@ -1,0 +1,12 @@
+
+{
+  "name": "SystemConfig",
+  "type": "object",
+  "properties": {
+    "config_key": { "type": "string" },
+    "config_value": { "type": "string" },
+    "config_type": { "type": "string", "enum": ["websocket","ml_model","firewall","logging","general"] },
+    "description": { "type": "string" }
+  },
+  "required": ["config_key","config_value"]
+}

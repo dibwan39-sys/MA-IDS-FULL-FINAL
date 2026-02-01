@@ -1,0 +1,72 @@
+{
+  "name": "SecurityEvent",
+  "type": "object",
+  "properties": {
+    "event_type": {
+      "type": "string",
+      "enum": [
+        "dos",
+        "probe",
+        "r2l",
+        "u2r",
+        "normal",
+        "suspicious"
+      ],
+      "description": "\u0646\u0648\u0639 \u0627\u0644\u062d\u062f\u062b \u0627\u0644\u0623\u0645\u0646\u064a"
+    },
+    "source_ip": {
+      "type": "string",
+      "description": "\u0639\u0646\u0648\u0627\u0646 IP \u0627\u0644\u0645\u0635\u062f\u0631"
+    },
+    "dest_ip": {
+      "type": "string",
+      "description": "\u0639\u0646\u0648\u0627\u0646 IP \u0627\u0644\u0647\u062f\u0641"
+    },
+    "protocol": {
+      "type": "string",
+      "description": "\u0627\u0644\u0628\u0631\u0648\u062a\u0648\u0643\u0648\u0644 \u0627\u0644\u0645\u0633\u062a\u062e\u062f\u0645"
+    },
+    "port": {
+      "type": "number",
+      "description": "\u0631\u0642\u0645 \u0627\u0644\u0645\u0646\u0641\u0630"
+    },
+    "severity": {
+      "type": "string",
+      "enum": [
+        "critical",
+        "high",
+        "medium",
+        "low",
+        "info"
+      ],
+      "description": "\u0645\u0633\u062a\u0648\u0649 \u0627\u0644\u062e\u0637\u0648\u0631\u0629"
+    },
+    "action_taken": {
+      "type": "string",
+      "enum": [
+        "blocked",
+        "allowed",
+        "flagged",
+        "quarantined"
+      ],
+      "description": "\u0627\u0644\u0625\u062c\u0631\u0627\u0621 \u0627\u0644\u0645\u062a\u062e\u0630"
+    },
+    "payload_size": {
+      "type": "number",
+      "description": "\u062d\u062c\u0645 \u0627\u0644\u062d\u0645\u0648\u0644\u0629"
+    },
+    "details": {
+      "type": "string",
+      "description": "\u062a\u0641\u0627\u0635\u064a\u0644 \u0625\u0636\u0627\u0641\u064a\u0629"
+    },
+    "ml_confidence": {
+      "type": "number",
+      "description": "\u0646\u0633\u0628\u0629 \u062b\u0642\u0629 \u0646\u0645\u0648\u0630\u062c \u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a"
+    }
+  },
+  "required": [
+    "event_type",
+    "source_ip",
+    "severity"
+  ]
+}
